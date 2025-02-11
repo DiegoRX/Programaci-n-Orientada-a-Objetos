@@ -145,5 +145,4 @@ El estudiante debe crear una nueva clase llamada `Avion` que modele un vehículo
 El avión ha sido encendido.
 El avión está volando a una altura de 10000 metros.
 El avión ha aterrizado y se ha apagado.
-El avión no puede volar porque está apagado.
 ```

@@ -80,13 +80,28 @@ class Coke:
         return 1.00 + 0.02 * self.ounces
 
     def __str__(self):
-        return f"{self.ounces}oz Coke"    
+        return f"{self.ounces}oz Coke"   
+    
+class Salad:
+    def __init__(self, units):
+        self.units = units
+        
+    @property
+    def price(self):
+        return 11.95 * self.units
+
+    def __str__(self):
+        return f"{self.units} Mediterranean Salad"
+    
+    
+    
 
 pizza1 = RoundPizza(16)
 pizza1.add_topping("Extra Cheese")
 pizza2 = SquarePizza(16)
 pizza2.add_topping(["Extra Cheese", "Tomato", "Olives"])
-order = (pizza1, pizza2, Coke(20))
+salad = Salad(3)
+order = (pizza1, pizza2, Coke(400),salad)
 
 for item in order:
     print(f"A {item} will cost ${item.price:.2f}")

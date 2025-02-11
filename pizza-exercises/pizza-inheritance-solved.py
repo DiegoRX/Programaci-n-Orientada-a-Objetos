@@ -49,47 +49,32 @@ class RoundPizza(Pizza):
 
 class SquarePizza(Pizza):
     def __init__(self, length):
-        self.length = length
-
-    @property
-    def length(self): return self._length
-
-    @length.setter
-    def length(self, length):
-        if not isinstance(length, (int, float)):
+           if not isinstance(length, (int, float)):
             raise TypeError("The length must be an integer or float")
-        elif length < 0:
-            raise ValueError("The length must not be megative")
-        else:
-            self._length = length
+           elif length < 0:
+                raise ValueError("The length must not be megative")
+           else:
+            self.length = length
 
     @property
-    def area(self):
-        return self.length ** 2
+    def area(self): return self.length ** 2
 
-    def __str__(self):
+    def __str__(self): 
         return f'{self.length}" square pizza with {super().__str__()}'
+        
 
 
-class Coke:
-    def __init__(self, ounces):
-        self.ounces = ounces
+pizza = RoundPizza(16)
+print(f"A {pizza} will cost ${pizza.price:.2f}")
+pizza.add_topping("Extra Cheese")
+print(f"A {pizza} will cost ${pizza.price:.2f}")
+pizza.add_topping(["Tomato", "Olives"])
+print(f"A {pizza} will cost ${pizza.price:.2f}")
 
-    @property
-    def price(self):
-        return 1.00 + 0.02 * self.ounces
 
-    def __str__(self):
-        return f"{self.ounces}oz Coke"    
-
-pizza1 = RoundPizza(16)
-pizza1.add_topping("Extra Cheese")
 pizza2 = SquarePizza(16)
-pizza2.add_topping(["Extra Cheese", "Tomato", "Olives"])
-order = (pizza1, pizza2, Coke(20))
-
-for item in order:
-    print(f"A {item} will cost ${item.price:.2f}")
-else:
-    total_price = sum(item.price for item in order)
-    print(f"The total order will cost ${total_price:.2f}")
+print(f"A {pizza2} will cost ${pizza2.price:.2f}")
+pizza2.add_topping("Extra Cheese")
+print(f"A {pizza2} will cost ${pizza2.price:.2f}")
+pizza2.add_topping(["Tomato", "Olives"])
+print(f"A {pizza2} will cost ${pizza2.price:.2f}")

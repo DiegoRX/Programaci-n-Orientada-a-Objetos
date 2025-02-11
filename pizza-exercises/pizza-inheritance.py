@@ -49,19 +49,14 @@ class RoundPizza(Pizza):
 
 class SquarePizza(Pizza):
     def __init__(self, length):
-           if not isinstance(length, (int, float)):
-            raise TypeError("The length must be an integer or float")
-           elif length < 0:
-                raise ValueError("The length must not be megative")
-           else:
-            self.length = length
+        pass
 
     @property
-    def area(self): return self.length ** 2
+    def area(self):
+        pass
 
-    def __str__(self): 
-        return f'{self.length}" square pizza with {super().__str__()}'
-        
+    def __str__(self):
+        pass
 
 
 pizza = RoundPizza(16)
@@ -72,9 +67,10 @@ pizza.add_topping(["Tomato", "Olives"])
 print(f"A {pizza} will cost ${pizza.price:.2f}")
 
 
-pizza2 = SquarePizza(16)
-print(f"A {pizza2} will cost ${pizza2.price:.2f}")
-pizza2.add_topping("Extra Cheese")
-print(f"A {pizza2} will cost ${pizza2.price:.2f}")
-pizza2.add_topping(["Tomato", "Olives"])
-print(f"A {pizza2} will cost ${pizza2.price:.2f}")
+##pizza = SquarePizza(16)
+##print(f"A {pizza} will cost ${pizza.price:.2f}")
+##pizza.add_topping("Extra Cheese")
+##print(f"A {pizza} will cost ${pizza.price:.2f}")
+##pizza.add_topping(["Tomato", "Olives"])
+##print(f"A {pizza} will cost ${pizza.price:.2f}")
+

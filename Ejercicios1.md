@@ -1,6 +1,3 @@
-Aquí tienes el contenido en **Markdown** correctamente formateado y listo para usar en un archivo `README.md`:
-
-```markdown
 # Proyectos de Programación Orientada a Objetos en Python
 
 Este repositorio contiene dos proyectos prácticos desarrollados en Python para practicar conceptos fundamentales de la **Programación Orientada a Objetos (POO)**, como **herencia** y **polimorfismo**. Los proyectos son:

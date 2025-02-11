@@ -1,14 +1,5 @@
-2025-02-06 16:29
-
-Status:
-
-Tags:
-
-## References 
- [[JavaScript]]
-
-## Notes
-[[Python]]3
+# Curso de Programación Orientada a Ojetos II
+## Fundación Universitaria Nueva América
 
 ## Objetivos de Aprendizaje
 

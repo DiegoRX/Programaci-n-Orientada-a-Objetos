@@ -95,9 +95,56 @@ Simplemente ejecuta el archivo correspondiente en tu terminal:
 python nombre_del_archivo.py
 ```
 
-### **Personalización**
-Puedes modificar los datos de entrada en cada archivo para probar diferentes escenarios. Por ejemplo:
-- En el proyecto de **Gestión de Vehículos**, puedes agregar nuevos vehículos o cambiar sus atributos.
-- En el proyecto de **Gestión de Empleados**, puedes agregar nuevos empleados o ajustar sus salarios y bonos.
+
+```markdown
+# Tareas Adicionales
+
+## Tarea 1: Cálculo del Promedio de Edad de los Empleados
+
+El estudiante debe crear una nueva función que tome las edades de los empleados y calcule la edad promedio. Esta tarea tiene como objetivo practicar el manejo de listas, objetos y métodos en Python.
+
+### Descripción de la Tarea:
+
+**Objetivo:** Crear una función que calcule el promedio de edad de una lista de empleados.
+
+**Requisitos:**
+- La función debe recibir una lista de objetos de tipo `Empleado`.
+- Debe calcular el promedio de las edades de los empleados utilizando un bucle o una comprensión de lista.
+- Si la lista está vacía, la función debe devolver `0` para evitar errores.
+
+**Salida Esperada:**
+```
+Promedio de edad de los empleados: 31.67
+```
 
 ---
+
+## Tarea 2: Creación de la Clase `Avion`
+
+El estudiante debe crear una nueva clase llamada `Avion` que modele un vehículo con las siguientes características:
+- El avión puede encenderse.
+- El avión puede volar a una altura específica.
+- El avión puede aterrizar y apagarse.
+
+### Descripción de la Tarea:
+
+**Objetivo:** Practicar la creación de una clase con atributos y métodos que representen un objeto del mundo real.
+
+**Requisitos:**
+- La clase debe llamarse `Avion`.
+- Debe tener un atributo `encendido` (booleano) para indicar si el avión está encendido o apagado.
+- Debe tener un atributo `altura` (numérico) para indicar la altura actual del avión.
+- **Métodos requeridos:**
+  - `encender()`: Enciende el avión si está apagado.
+  - `volar(altura)`: Hace que el avión vuele a una altura específica si está encendido.
+  - `aterrizar()`: Hace que el avión aterrice y se apague.
+- Validar que el avión no pueda volar si está apagado.
+
+**Salida Esperada:**
+```
+El avión ha sido encendido.
+El avión está volando a una altura de 10000 metros.
+El avión ha aterrizado y se ha apagado.
+El avión no puede volar porque está apagado.
+```
+```

@@ -96,7 +96,7 @@ python nombre_del_archivo.py
 ```
 
 
-```markdown
+
 # Tareas Adicionales
 
 ## Tarea 1: Cálculo del Promedio de Edad de los Empleados
@@ -146,5 +146,4 @@ El avión ha sido encendido.
 El avión está volando a una altura de 10000 metros.
 El avión ha aterrizado y se ha apagado.
 El avión no puede volar porque está apagado.
-```
 ```

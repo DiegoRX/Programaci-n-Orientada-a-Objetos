@@ -101,7 +101,7 @@ pizza1.add_topping("Extra Cheese")
 pizza2 = SquarePizza(16)
 pizza2.add_topping(["Extra Cheese", "Tomato", "Olives"])
 salad = Salad(3)
-order = (pizza1, pizza2, Coke(400),salad)
+order = (pizza1, pizza2, Coke(16),salad)
 
 for item in order:
     print(f"A {item} will cost ${item.price:.2f}")

@@ -37,6 +37,21 @@ class Automovil(Vehiculo):
         else:
             print(f"{self.marca} {self.modelo} no puede moverse porque está apagado.")
 
+            
+class Avion(Vehiculo):
+    def __init__(self, marca, modelo, altura):
+        super().__init__(marca, modelo)
+        self.altura = altura
+
+    def moverse(self):
+        if self.encendido:
+               print(f"{self.marca} {self.modelo} está volando a la altura {self.altura} metros.")         
+        else:
+            print(f"{self.marca} {self.modelo} no puede volar porque está apagado.")
+            
+    def apagar(self):
+        print(f"{self.marca} {self.modelo} ha aterrizado y se ha apagado.")
+
 
 class Bicicleta(Vehiculo):
     def __init__(self, marca, modelo):
@@ -76,7 +91,8 @@ def simular_movimiento(vehiculos):
 vehiculos = [
     Automovil("Toyota", "Corolla", 50),
     Bicicleta("Trek", "Mountain Bike"),
-    Motocicleta("Harley-Davidson", "Street 750", 120)
+    Motocicleta("Harley-Davidson", "Street 750", 120),
+    Avion("Boening","747", 10000)
 ]
 
 simular_movimiento(vehiculos)

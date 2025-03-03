@@ -22,50 +22,50 @@ class Impresora(DispositivoMultifuncion):
         raise Exception("¡Una impresora no puede enviar fax!")
     
 # SOLUCIÓN
-# from abc import ABC, abstractmethod
+from abc import ABC, abstractmethod
     
-# class Imprimible():
-#     @abstractmethod
-#     def imprimir(self):
-#         pass
+class Imprimible():
+    @abstractmethod
+    def imprimir(self):
+        pass
     
-# class Escaneble():
-#     @abstractmethod
-#     def escanear(self):
-#         pass
+class Escaneble():
+    @abstractmethod
+    def escanear(self):
+        pass
     
-# class EnviadoraFax():
-#     @abstractmethod
-#     def enviar_fax(self):
-#         pass
+class EnviadoraFax():
+    @abstractmethod
+    def enviar_fax(self):
+        pass
         
     
-# class Impresora(Imprimible): 
-#     def imprimir(self):
-#         print("Imprimiendo documento...")
+class Impresora(Imprimible): 
+    def imprimir(self):
+        print("Imprimiendo documento...")
         
-# class Escaner(Escaneble):
-#     def escanear(self):
-#         print("Escaneando documento...")    
-# class Fax(EnviadoraFax):
-#     def enviar_fax(self):
-#         print("Enviando fax...")    
+class Escaner(Escaneble):
+    def escanear(self):
+        print("Escaneando documento...")    
+class Fax(EnviadoraFax):
+    def enviar_fax(self):
+        print("Enviando fax...")    
         
-# class ImpresoraConEscaner(Imprimible, Escaneble):       
-#     def imprimir(self):
-#         print("ImpresoraConEscaner imprimiendo documento...")
-#     def escanear(self):
-#         print("ImpresoraConEscaner escaneando documento...")  
+class ImpresoraConEscaner(Imprimible, Escaneble):       
+    def imprimir(self):
+        print("ImpresoraConEscaner imprimiendo documento...")
+    def escanear(self):
+        print("ImpresoraConEscaner escaneando documento...")  
         
-# impresora = Impresora()
-# impresora.imprimir()   
-# fax = Fax()
-# fax.enviar_fax()
-# escaner = Escaner()
-# escaner.escanear()
-# impresoraConEscaner = ImpresoraConEscaner()
-# impresoraConEscaner.escanear()
-# impresoraConEscaner.imprimir()
+impresora = Impresora()
+impresora.imprimir()   
+fax = Fax()
+fax.enviar_fax()
+escaner = Escaner()
+escaner.escanear()
+impresoraConEscaner = ImpresoraConEscaner()
+impresoraConEscaner.escanear()
+impresoraConEscaner.imprimir()
         
    
 # 🚀 **Desafío:** Refactoriza este código dividiendo la 
